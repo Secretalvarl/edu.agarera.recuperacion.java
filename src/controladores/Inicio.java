@@ -55,6 +55,7 @@ public class Inicio {
 							cerrarMenu = true;
 						break;
 						case 1:
+							fi.crearFicheroLog("Venta de vehículo");
 							for (VehiculoDto vDto : listaVehiculosDtos) {
 								
 								for (PropietarioDto pDto : listaPropietario) {
@@ -62,10 +63,11 @@ public class Inicio {
 									System.out.println(vDto.ToString("[VEH]").concat(pDto.ToString("[PRO]")));
 								}
 								
-								oi.ventaVehiculo(sc);
+								
 								
 							}
-							fi.crearFicheroLog("Venta de vehículo");
+							oi.ventaVehiculo(sc);
+							
 							break;
 						default:
 							System.out.println("Opcin seleccionada no valida");
