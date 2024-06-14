@@ -101,7 +101,7 @@ public class FicheroImplementacion implements FicheroInterfaz {
 
 		} catch (Exception e) {
 
-			System.err.println("Error-007, siga usando la aplicacion con normalidad".concat(e.toString()));
+			System.err.println("Error-008, siga usando la aplicacion con normalidad".concat(e.toString()));
 		}
 	}
 
